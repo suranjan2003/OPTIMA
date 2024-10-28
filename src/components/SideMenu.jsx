@@ -25,7 +25,7 @@ const SideMenu = ({ isSidebarOpen, toggleSidebar, onYearSelect }) => {
         <div className="p-6 h-full overflow-y-auto">
           <h1 className="text-2xl font-bold text-gray-700 mb-4">Years</h1>
           <hr className="mb-4 border-gray-300" />
-          <ul className="space-y-4 text-lg">
+          <ul className="space-y-1 px-3 text-lg">
             {years.map((year, index) => (
               <li
                 key={index}
