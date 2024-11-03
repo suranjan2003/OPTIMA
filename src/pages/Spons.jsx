@@ -18,8 +18,9 @@ const Spons = () => {
     };
 
     return (
-        <div className="relative h-screen bg-[#170453] flex flex-col">
-            {/* Header section with button and heading */}
+        <div className="relative bg-[#170453] flex flex-col">
+            <div>
+                {/* Header section with button and heading */}
             <div className="items-center justify-between px-5 pt-16 ">
                 <div>
                 <button
@@ -40,9 +41,7 @@ const Spons = () => {
             />
 
             {/* Main content section */}
-            <section
-            className="flex-grow bg-gray-100 w-full sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl mx-auto p-6 mt-10 text-black overflow-y-auto px-4 lg:rounded-lg md:rounded-lg"
-            >
+            
                 {selectedYear === 2025 && (
                     <Year25/>
                 )}
@@ -52,7 +51,8 @@ const Spons = () => {
                 {selectedYear === 'Previous' && (
                     <PreviousYears/>
                 )}
-            </section>
+            </div>
+            
         </div>
     );
 };
