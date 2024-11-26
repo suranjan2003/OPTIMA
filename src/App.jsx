@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import Spons from './pages/Spons'
+import Home from './pages/Home'
 
 function App() {
   return (
     <>
-      <Spons/>
+      <Home/>
     </>
   )
 }

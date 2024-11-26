@@ -18,30 +18,29 @@ const Spons = () => {
     };
 
     return (
-        <div className="relative bg-[#170453] flex flex-col">
             <div>
                 {/* Header section with button and heading */}
-            <div className="items-center justify-between px-5 pt-16 ">
-                <div>
-                <button
-                onClick={toggleSidebar}
-                className="text-white p-3 rounded transition duration-300 hover:text-blue-300"
-                >
-                <FaGripLines size={34} />
-                </button>
+                <div className="items-center justify-between px-5 pt-16 ">
+                    <div>
+                    <button
+                    onClick={toggleSidebar}
+                    className="text-white p-3 rounded transition duration-300 hover:text-blue-300"
+                    >
+                    <FaGripLines size={34} />
+                    </button>
+                    </div>
+                    <h2 className="flex-grow text-center text-2xl font-bold text-white">Sponsorship Partners {selectedYear}</h2>
                 </div>
-                <h2 className="flex-grow text-center text-2xl font-bold text-white">Sponsorship Partners {selectedYear}</h2>
-            </div>
 
-            {/* SideMenu component */}
-            <SideMenu 
-                isSidebarOpen={isSidebarOpen} 
-                toggleSidebar={toggleSidebar} 
-                onYearSelect={handleYearSelect}
-            />
+                {/* SideMenu component */}
+                <SideMenu 
+                    isSidebarOpen={isSidebarOpen} 
+                    toggleSidebar={toggleSidebar} 
+                    onYearSelect={handleYearSelect}
+                />
 
-            {/* Main content section */}
-            
+                {/* Main content section */}
+                
                 {selectedYear === 2025 && (
                     <Year25/>
                 )}
@@ -53,7 +52,6 @@ const Spons = () => {
                 )}
             </div>
             
-        </div>
     );
 };
 
