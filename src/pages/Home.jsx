@@ -5,7 +5,7 @@ import Gallery from './Gallery';
 const Home = () => {
     let x=0;
   return (
-    <div className="relative bg-[#170453] flex flex-col">
+    <div className="relative bg-[#170453] flex flex-col min-h-screen">
         {x === 1 ? <Spons /> : <Gallery />}
     </div>
   )

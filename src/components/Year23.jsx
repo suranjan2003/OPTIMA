@@ -3,27 +3,27 @@ import React from 'react';
 const Year23 = () => {
     // Array for the single Title Sponsor
     const titleSponsor = [
-        { src: "/sponslogos23/OPTYM.jpg", link: "https://titlesponsor.com" }
+        { src: "/sponslogos23/OPTYM.jpg", link: "https://optym.com/" }
     ];
 
     // Array of major sponsors with image and link properties
     const majorSponsorImages = [
-        { src: "/sponslogos23/AirIndia.png", link: "https://sponsor1.com" },
-        { src: "/sponslogos23/FlexSim.jpg", link: "https://sponsor2.com" },
+        { src: "/sponslogos23/AirIndia.png", link: "https://www.airindia.com/" },
+        { src: "/sponslogos23/FlexSim.jpg", link: "https://www.flexsim.com/" },
     ];
 
     const strategicSponsorImages = [
-        { src: "/sponslogos23/RahulCommerce.jpg", link: "https://sponsor1.com" },
-        { src: "/sponslogos23/Vicon.png", link: "https://sponsor2.com" }
+        { src: "/sponslogos23/RahulCommerce.jpg", link: "https://rahulcom.com/" },
+        { src: "/sponslogos23/Vicon.png", link: "https://www.vicon.com/" }
     ];
 
     const eventsSponsorImages = [
-        { src: "/sponslogos23/ORMAE.jpeg", link: "https://sponsor1.com" },
-        { src: "/sponslogos23/DCVisionVR.jpg", link: "https://sponsor2.com" },
+        { src: "/sponslogos23/ORMAE.jpeg", link: "https://ormae.com/" },
+        { src: "/sponslogos23/DCVisionVR.jpg", link: "https://dcvision.in/" },
         { src: "/sponslogos23/Blue_Yonder.png", link: "https://sponsor1.com" },
-        { src: "/sponslogos23/Delhivery_Logo.png", link: "https://sponsor2.com" },
-        { src: "/sponslogos23/GFG.png", link: "https://sponsor2.com" },
-        { src: "/sponslogos23/Sabre.png", link: "https://sponsor2.com" }
+        { src: "/sponslogos23/Delhivery_Logo.png", link: "https://www.delhivery.com/" },
+        { src: "/sponslogos23/GFG.png", link: "https://www.geeksforgeeks.org/" },
+        { src: "/sponslogos23/Sabre.png", link: "https://www.sabre.com/" }
     ];
 
     const MerchandiseSponsor = [
@@ -31,8 +31,8 @@ const Year23 = () => {
     ];
 
     const mediaSponsorImages = [
-        { src: "/sponslogos23/CampusVarta.png", link: "https://sponsor1.com" },
-        { src: "/sponslogos23/WomansEra.png", link: "https://sponsor2.com" }
+        { src: "/sponslogos23/CampusVarta.png", link: "https://www.campusvarta.com/" },
+        { src: "/sponslogos23/WomansEra.png", link: "https://womansera.com/" }
     ];
 
     return (
