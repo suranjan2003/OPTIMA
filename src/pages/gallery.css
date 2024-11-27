@@ -1,0 +1,40 @@
+/* Modal overlay for the background blur */
+.modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-blur {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    filter: blur(10px);
+  }
+  
+  /* Modal image container */
+  .modal-image-container img {
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+  }
+  
+  .modal-image-container img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Fade-in animation for gallery */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
