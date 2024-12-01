@@ -4,9 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 function MultipleItems({ 
-  slidesToShow = 3, 
-  slidesToScroll = 3, 
-  speed = 500,
+  slidesToShow = 3,
+  slidesToScroll = 1,
   infinite = true,
   dots = false
 }) {
@@ -19,9 +18,12 @@ function MultipleItems({
   const settings = {
     dots,
     infinite,
-    speed,
+    speed: 3000,
     slidesToShow,
     slidesToScroll,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,
