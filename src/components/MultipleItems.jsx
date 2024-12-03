@@ -10,15 +10,21 @@ function MultipleItems({
   dots = false
 }) {
   const sponsorLogos = [
-    "/sponslogos23/OPTYM.jpg",
-    "/sponslogos23/Vicon.png", 
-    "/sponslogos23/ORMAE.jpeg"
+    "/Optima-gallery-photos/guest-lecture-images/20231007_171230.jpg",
+    "/Optima-gallery-photos/guest-lecture-images/20231007_172820.jpg",
+    "/Optima-gallery-photos/guest-lecture-images/20231007_173515.jpg",
+    "/Optima-gallery-photos/guest-lecture-images/20231007_180155.jpg",
+    "/Optima-gallery-photos/guest-lecture-images/20231008_170302.jpg",
+    "/Optima-gallery-photos/guest-lecture-images/Copy of 9ea026a5-fc92-4f8d-94dc-2805f90a9344.jpg",
+    "/Optima-gallery-photos/guest-lecture-images/IMG_6807.JPG",
+    "/Optima-gallery-photos/guest-lecture-images/IMG_7022.JPG",
+    "/Optima-gallery-photos/guest-lecture-images/IMG-20231010-WA0044.jpg",
   ];
 
   const settings = {
     dots,
     infinite,
-    speed: 3000,
+    speed: 1000,
     slidesToShow,
     slidesToScroll,
     autoplay: true,
@@ -29,7 +35,7 @@ function MultipleItems({
         breakpoint: 1024,
         settings: {
           slidesToShow: Math.min(slidesToShow, 3),
-          slidesToScroll: 1
+          slidesToScroll: slidesToScroll
         }
       },
       {
@@ -42,18 +48,19 @@ function MultipleItems({
     ]
   };
 
-  // Duplicate logos to ensure enough slides
-  const repeatedLogos = [...sponsorLogos, ...sponsorLogos, ...sponsorLogos, ...sponsorLogos];
-
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {repeatedLogos.map((src, index) => (
-          <div key={index} className="w-48 h-72 overflow-hidden p-2">
+        {sponsorLogos.map((src, index) => (
+          <div 
+            key={index} 
+            className="w-48 h-72 overflow-hidden p-2 transition-all duration-300 ease-in-out hover:scale-105"
+          >
             <img 
               src={src} 
-              alt={`Image description ${index + 1}`} 
-              className="w-full h-full object-cover"
+              alt={`Guest Lecture Image ${index + 1}`} 
+              className="w-full h-full object-cover" 
+              loading="lazy"
             />
           </div>
         ))}

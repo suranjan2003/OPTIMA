@@ -9,10 +9,15 @@ const Gallery = () => {
 
   return (
     <div className="gallery-container bg-[#170453] text-white min-h-screen p-6">
-      {/* Header */}
+      
       <div className="text-center mb-6">
         <h1 className="text-4xl font-bold">Gallery</h1>
-        <h3 className="text-xl m-2">A Glimpse into life with Optima</h3>
+        <h3 
+        className="text-xl m-2 text-gray-300 max-w-6xl mx-auto">
+          Step into the world of Optima through our curated gallery, 
+          where innovation meets collaboration. Relive the moments that showcase the spirit of problem-solving, creativity, 
+          and interdisciplinary excellence that define this premier tech fest
+        </h3>
       </div>
 
       <div className="h-auto w-[85vw] mx-auto pt-10">
