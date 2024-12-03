@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MultipleItems from "../components/MultipleItems";
 import Day1Items from "../components/Day1Items";
+import Day0Items from "../components/Day0Items";
 
 
 const Gallery = () => {
@@ -31,6 +32,10 @@ const Gallery = () => {
         </div>
       </div>
 
+      <div className="h-auto w-[85vw] mx-auto pt-10">
+        <h1 className="flex item-center justify-center text-3xl font-bold m-2">Day 0</h1>
+        <Day0Items/>
+      </div>
 
       <div className="h-auto w-[85vw] mx-auto pt-10">
         <h1 className="flex item-center justify-center text-3xl font-bold m-2">Day 1</h1>
