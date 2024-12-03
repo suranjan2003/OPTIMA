@@ -14,20 +14,23 @@ const Gallery = () => {
       </div>
 
       <div className="h-auto w-[85vw] mx-auto pt-10">
-        <div className="video-container flex justify-center">
-          <video
-            autoPlay
-            loop
-            muted
-            className="rounded-lg shadow-lg"
-            width="720"
-            height="400"
-          >
-            <source src="/Optima-Gallery/Optima-2023.MP4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div className="video-container relative w-full max-w-[720px] max-h-[400px] mx-auto">
+          <iframe
+            src="https://www.youtube.com/embed/MK9qOB40Cic"
+            title="Optima Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full rounded-lg shadow-lg"
+            style={{
+              aspectRatio: '16/9',
+              maxWidth: '100%',
+              maxHeight: '100%',
+            }}
+          ></iframe>
         </div>
       </div>
+
 
       <div className="h-auto w-[85vw] mx-auto pt-10">
         <h1 className="flex item-center justify-center text-3xl font-bold m-2">Day 1</h1>
